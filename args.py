@@ -7,6 +7,5 @@ def my_sum(*args):
     return total
 
 result = my_sum(7567, 9272, 9383)
-print(result)
+print(result) 
 #Can also be used for multiplication, division, etc. Just change the operator in the for loop. This is the basic use case of args.
-
