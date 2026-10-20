@@ -8,3 +8,6 @@ if match:
     print("Start index:", match.start())
     print("End index:", match.end())
 
+#We can also use the method
+#matches =re.findall("the" , text, re.IGNORECASE) #Case insensitive search
+#print("Matched:", matches)
