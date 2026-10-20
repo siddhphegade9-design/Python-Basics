@@ -11,3 +11,7 @@ if match:
 #We can also use the method
 #matches =re.findall("the" , text, re.IGNORECASE) #Case insensitive search
 #print("Matched:", matches)
+
+
+new_text = re.sub("dog" , "cat", text)
+print("New Text:", new_text)
