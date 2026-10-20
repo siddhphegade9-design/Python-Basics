@@ -26,3 +26,11 @@ print(df.loc["Charizard",["Height","Weight"]]) #Gives only the Height and Weight
 #print(df.iloc[0:10:2])
 
 
+tall_pokemon = df[df["Height"]>=2]
+print(tall_pokemon)
+
+legendary_pokemon = df[df["Legendary"]==True]
+print(legendary_pokemon)
+
+ff_pokemon = df[(df["Type1"]=="Fire") & (df["Type2"]=="Flying")]
+print(ff_pokemon)
