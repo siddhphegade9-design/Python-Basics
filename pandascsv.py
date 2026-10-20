@@ -23,4 +23,6 @@ print(df.loc["Charizard",["Height","Weight"]]) #Gives only the Height and Weight
 #SELECTION BY ROWS
 #print(df.iloc[0])
 #print(df.loc["Charizard"])
+#print(df.iloc[0:10:2])
+
 
