@@ -14,3 +14,13 @@ df1 = pd.read_csv("data.csv", index_col="Name") #Dets the Name Column as Index C
 print(df1)
 
 print(df.loc["Charizard",["Height","Weight"]]) #Gives only the Height and Weight of Charizard
+
+
+#SELECTION BY COLUMN
+#print(df["Name"].to_string())
+#print(df["Height"].to_string())
+
+#SELECTION BY ROWS
+#print(df.iloc[0])
+#print(df.loc["Charizard"])
+
