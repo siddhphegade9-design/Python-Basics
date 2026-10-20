@@ -1,36 +1,33 @@
 import pandas as pd
 
-df= pd.read_csv("data.csv")
+df = pd.read_csv("data.csv")
 print(df)
 
-print(df.to_string()) #Displays entire Data
+print(df.to_string())  # Displays entire data
 
-print(df["Name"]) #Gives the entire Name Column Data
+print(df["Name"])  # Entire Name column
 
-print(df.loc[2]) #Gives the entire Data of Row at Index 2
+print(df.loc[2])  # Entire row at index 2
 
-
-df1 = pd.read_csv("data.csv", index_col="Name") #Dets the Name Column as Index Column
+df1 = pd.read_csv("data.csv", index_col="Name")  # Name column as index
 print(df1)
 
-print(df.loc["Charizard",["Height","Weight"]]) #Gives only the Height and Weight of Charizard
+print(df1.loc["Charizard", ["Height", "Weight"]])  # Height and Weight of Charizard (uses df1!)
 
+# SELECTION BY COLUMN
+# print(df["Name"].to_string())
+# print(df["Height"].to_string())
 
-#SELECTION BY COLUMN
-#print(df["Name"].to_string())
-#print(df["Height"].to_string())
+# SELECTION BY ROWS
+# print(df.iloc[0])
+# print(df1.loc["Charizard"])  # needs df1 too
+# print(df.iloc[0:10:2])
 
-#SELECTION BY ROWS
-#print(df.iloc[0])
-#print(df.loc["Charizard"])
-#print(df.iloc[0:10:2])
-
-
-tall_pokemon = df[df["Height"]>=2]
+tall_pokemon = df[df["Height"] >= 2]
 print(tall_pokemon)
 
-legendary_pokemon = df[df["Legendary"]==True]
+legendary_pokemon = df[df["Legendary"] == True]
 print(legendary_pokemon)
 
-ff_pokemon = df[(df["Type1"]=="Fire") & (df["Type2"]=="Flying")]
+ff_pokemon = df[(df["Type1"] == "Fire") & (df["Type2"] == "Flying")]
 print(ff_pokemon)
