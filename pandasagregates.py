@@ -15,3 +15,8 @@ print(df.count()) #counts the number of numeric datas.
 #Single Columnn Aggregation
 print(df["Height"].mean())
 print(df["Height"].sum())
+
+
+group = df.groupby("Type1")
+print(group["Height"].mean())
+print(group["Height"].sum())
